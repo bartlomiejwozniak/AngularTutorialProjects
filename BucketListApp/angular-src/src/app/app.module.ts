@@ -18,7 +18,7 @@ import { ListService } from './services/list.service';
   ],
   //Modules go here
   imports: [
-    BrowserModule
+    BrowserModule,
     HttpModule,
     FormsModule
   ],
