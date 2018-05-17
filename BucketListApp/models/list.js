@@ -8,13 +8,13 @@ const BucketlistSchema = mongoose.Schema({
     },
     description: String,
     category: {
-    	type: String,
-		required: true,
-		enum: ['High', 'Medium', 'Low']
-	} 
+        type: String,
+        required: true,
+        enum: ['High', 'Medium', 'Low']
+    }
 });
 
-const BucketList = module.exports = mongoose.model('BucketList', BucketlistSchema );
+const BucketList = module.exports = mongoose.model('BucketList', BucketlistSchema);
 
 module.exports.getAllLists = (callback) => {
     BucketList.find(callback);
